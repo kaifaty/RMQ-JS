@@ -2,7 +2,7 @@
 
 
 
-## Using 
+## Using Sparse Tables
 
 Get max of rate
 ```$xslt
