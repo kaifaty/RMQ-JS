@@ -1,4 +1,4 @@
-import {SparsTables} from "./SparsTables";
+import {SparseTables} from "./SparseTables";
 
 let data = [
     {date: 0, rate: 100},
@@ -12,13 +12,14 @@ let data = [
     {date: 0, rate: 86},
     {date: 0, rate: 11},
 ];
-
-//let ST = new SparsTables(data, 'max', 'rate');
-//let max = ST.query(3, 4);
-
 let data1 = [5, 634, 63, 7, 85, 3634, 7478, 8];
 
-let ST1 = new SparsTables(data1, 'max');
 
+let ST = new SparseTables(data, 'max', 'rate');
+let max = ST.query(3, 4);
+
+
+let ST1 = new SparseTables(data1, 'max');
 let max2 = ST1.query(3, 7);
-console.log(max2)
+
+console.log(max, max2)

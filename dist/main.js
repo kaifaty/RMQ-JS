@@ -117,13 +117,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"SparsTables.ts":[function(require,module,exports) {
+})({"SparseTables.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.SparsTables = void 0;
+exports.SparseTables = void 0;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -131,14 +131,14 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var SparsTables =
+var SparseTables =
 /*#__PURE__*/
 function () {
-  function SparsTables(data) {
+  function SparseTables(data) {
     var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'min';
     var prop = arguments.length > 2 ? arguments[2] : undefined;
 
-    _classCallCheck(this, SparsTables);
+    _classCallCheck(this, SparseTables);
 
     this.data = data;
     this.prop = prop;
@@ -152,7 +152,7 @@ function () {
     this.getSparse();
   }
 
-  _createClass(SparsTables, [{
+  _createClass(SparseTables, [{
     key: "getSparse",
     value: function getSparse() {
       var kMax = Math.ceil(Math.log(this.data.length));
@@ -197,14 +197,14 @@ function () {
     }
   }]);
 
-  return SparsTables;
+  return SparseTables;
 }();
 
-exports.SparsTables = SparsTables;
+exports.SparseTables = SparseTables;
 },{}],"main.ts":[function(require,module,exports) {
 "use strict";
 
-var _SparsTables = require("./SparsTables");
+var _SparseTables = require("./SparseTables");
 
 var data = [{
   date: 0,
@@ -236,14 +236,14 @@ var data = [{
 }, {
   date: 0,
   rate: 11
-}]; //let ST = new SparsTables(data, 'max', 'rate');
-//let max = ST.query(3, 4);
-
+}];
 var data1 = [5, 634, 63, 7, 85, 3634, 7478, 8];
-var ST1 = new _SparsTables.SparsTables(data1, 'max');
+var ST = new _SparseTables.SparseTables(data, 'max', 'rate');
+var max = ST.query(3, 4);
+var ST1 = new _SparseTables.SparseTables(data1, 'max');
 var max2 = ST1.query(3, 7);
-console.log(max2);
-},{"./SparsTables":"SparsTables.ts"}],"../../../Users/Kaifat/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+console.log(max, max2);
+},{"./SparseTables":"SparseTables.ts"}],"../../../Users/Kaifat/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

@@ -1,4 +1,4 @@
-class SparsTables{
+class SparseTables{
     readonly data: any[];
     readonly prop: string;
     readonly type: string;
@@ -62,5 +62,5 @@ class SparsTables{
 
 
 export {
-    SparsTables
+    SparseTables
 }

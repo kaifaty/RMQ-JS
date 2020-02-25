@@ -21,7 +21,7 @@ let data = [
 ];
 
 
-let ST = new SparsTables(data, 'max', 'rate');
+let ST = new SparseTables(data, 'max', 'rate');
 let max = ST.query(3, 4);
 ```
 
@@ -31,7 +31,7 @@ Get max value in array
 ```
 let data = [5, 634, 63, 7, 85, 3634, 7478, 8];
 
-let ST = new SparsTables(data, 'max');
+let ST = new SparseTables(data, 'max');
 let max = ST.query(3, 7);
 ```
 
