@@ -1,0 +1,20 @@
+{
+  "name": "realjs",
+  "version": "2.1.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \\\"Error: no ../../production/test specified\\\" && exit 1",
+    "buildreal": "parcel build realjs.ts -d /dist/ --out-file bundle.js --no-source-maps --experimental-scope-hoisting",
+    "build": "npm run-script build_js && npm run-script build_worker",
+    "watch": "parcel watch main.ts -d ./dist --out-file main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-typescript": "^7.7.4",
+    "babel-preset-env": "^1.7.0",
+    "typescript": "^3.7.4"
+  }
+}
