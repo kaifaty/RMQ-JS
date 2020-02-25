@@ -236,10 +236,13 @@ var data = [{
 }, {
   date: 0,
   rate: 11
-}];
-var ST = new _SparsTables.SparsTables(data, 'max', 'rate');
-var max = ST.query(3, 4);
-console.log(max);
+}]; //let ST = new SparsTables(data, 'max', 'rate');
+//let max = ST.query(3, 4);
+
+var data1 = [5, 634, 63, 7, 85, 3634, 7478, 8];
+var ST1 = new _SparsTables.SparsTables(data1, 'max');
+var max2 = ST1.query(3, 7);
+console.log(max2);
 },{"./SparsTables":"SparsTables.ts"}],"../../../Users/Kaifat/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
