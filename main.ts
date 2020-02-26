@@ -1,4 +1,4 @@
-import {SparseTables} from "./SparseTables";
+import {SparseTables} from "./src/SparseTables";
 
 let data = [
     {date: 0, rate: 100},
