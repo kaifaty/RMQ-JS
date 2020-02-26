@@ -2,7 +2,12 @@
 
 
 
-## Using Sparse Tables
+
+#### Sparse Tables (online, static)
+    Preprocess      - O (n * log(n))
+    Fetch           - O (1)
+    Memory          - O (n * log(n))
+
 
 Get max of rate
 ```$xslt
